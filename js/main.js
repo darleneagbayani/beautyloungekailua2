@@ -7,13 +7,14 @@ $(document)
             .sidebar('attach events', '.launch.button', 'slide out');
     });
 /* review google */
-jQuery(document).ready(function( $ ) {
-   $("#google-reviews").googlePlaces({
+jQuery(document).ready(function ($) {
+    $("#google-reviews").googlePlaces({
         placeId: 'ChIJ-4AXfdwUAHwRqESxGhdknak' //Find placeID @: https://developers.google.com/places/place-id
-      , render: ['reviews']
-      , min_rating: 5
-      , max_rows: 5
-   });
+            ,
+        render: ['reviews'],
+        min_rating: 5,
+        max_rows: 5
+    });
 });
 /* services popup */
 $(function () {
@@ -149,5 +150,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-

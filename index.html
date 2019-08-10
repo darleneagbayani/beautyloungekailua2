@@ -29,7 +29,8 @@
   <div class="tablet mobile only row">
     <div class="ui vertical borderless sidebar menu">
       <p class="navigation title">Home</p>
-      <a href="index.html" class="item side nav">About Us</a> <a href="biography.html" class="item side nav">Biography</a> <a href="policy.html" class="item side nav">Policies & Procedures</a> <a href="index.html" class="item side nav">Reviews</a>
+        <a href="index.html" class="item side nav">Return Home</a>
+      <a href="index.html#about" class="item side nav">About Us</a> <a href="index.html#biography" class="item side nav">Biography</a> <a href="index.html#policy" class="item side nav">Policies & Procedures</a> <a href="index.html#reviews" class="item side nav">Reviews</a>
       <div class="ui divider"></div>
       <p class="navigation title">Tips & Care</p>
       <a href="before.html" class="item side nav">Before Appointment</a> <a href="after.html" class="item side nav">After Appointment</a>
@@ -50,7 +51,7 @@
     <div class="computer only row nav">
       <div class="column">
         <div class="ui top fixed inverted huge compact stackable borderless menu">
-          <div class="ui simple dropdown item">Home
+          <div class="ui simple dropdown item"><a href="appointment.html" class="ui item nav">Home</a>
             <div class="menu drop">
               <div class="ui center aligned column"> <a href="index.html#about" class="item">About Us</a> </div>
               <div class="ui center aligned column"> <a href="index.html#biography" class="item">Biography</a> </div>
@@ -82,14 +83,13 @@
       </div>
     </div>
   </div>
-  
   <!-- start of navigation scroll -->
   <div class="pusher">
     <div class="ui segment pushable"> 
-      <!-- home --> 
       
-      <!-- computer home -->
-      <div class="home-body">
+      <!-- home -->
+      <div class="home-body"> 
+        <!-- computer home -->
         <div class="ui fluid center aligned grid home computer">
           <div class="computer only row">
             <div class="column"> <img class="home logo img" src="img/logo.gif"> </div>
@@ -100,10 +100,90 @@
           <div class="tablet mobile only row"> <img class="home logo img mobile" src="img/logo.gif"> </div>
         </div>
       </div>
+      <div class="about-body" id="about">
+        <div class="container">
+          <div class="ui very padded three column stackable center aligned grid">
+            <div class="first row">
+              <div class="four wide column"><img src="img/about/about-1.jpg"></div>
+              <div class="four wide column"><img src="img/about/about-2.jpg"></div>
+              <div class="four wide column"><img src="img/about/about-3.png"></div>
+            </div>
+          </div>
+          <div class="ui very padded two column stackable center alignedd grid">
+            <div class="second row">
+              <div class="ui five wide column"><img class="ui large image" src="img/about/about-title.png"></div>
+              <div class="five wide column">Through exceptional client services and years of perfecting our craft, we offer quality eyelash extensions services in a relaxing & sanitary environment.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about body close tag --> 
       
-      <!-- about -->
+      <!-- biography -->
+      <div class="biography-body" id="biography">
+        <div class="ui very padded two column stackable center aligned grid">
+          <div class="first row">
+            <div class="four wide column"><img src="img/biography/biography-1.jpg"></div>
+            <div class="four wide column"><img src="img/biography/biography-2.jpg"></div>
+          </div>
+        </div>
+        <div class="ui very padded two column stackable center aligned grid">
+          <div class="second row">
+            <div class="five wide column">Biography text goes here. Biography text goes here. Biography text goes here. Biography text goes here. Biography text goes here. Biography text goes here.</div>
+            <div class="five wide column"><img class="ui large image" src="img/biography/biography-title.png"></div>
+          </div>
+        </div>
+      </div>
+      <!-- biography body close tag --> 
+      
+      <!-- policy -->
+      <div class="policy-body" id="policy">
+        <div class="ui very padded center aligned grid">
+          <div class="ui fourteen wide column">
+            <div class="ui divider"></div>
+          </div>
+        </div>
+        <div class="ui very padded two column stackable center aligned grid">
+          <div class="policy first row">
+            <div class="column"><img class="ui large image" src="img/policy/policy-1.jpg"></div>
+            <div class="column">TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </div>
+          </div>
+          <div class="policy second row">
+            <div class="column"><img class="ui large image" src="img/policy/policy-title.png"></div>
+            <div class="column"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- reviews -->
+      <div class="review-body" id="review">
+        <div class="ui very padded center aligned grid">
+          <div class="ui fourteen wide column">
+            <div class="ui divider"></div>
+          </div>
+        </div>
+        <div class="ui centered two column stackable grid">
+          <div class="row">
+            <div class="ui three wide center aligned column"> <img class="ui centered small image review" src="img/review/review-heart.png"> <b>Customer reviews</b>
+        <div class="ui very padded center aligned grid">
+          <div class="ui fourteen wide column">
+            <div class="ui divider"></div>
+          </div>
+        </div>
+              Hear what our clients love about us. <br>
+              <a class="popup-review" type="button" href="https://search.google.com/local/writereview?placeid=ChIJ-4AXfdwUAHwRqESxGhdknak"><b>Share your own experience</b> </a> </div>
+            <div class="ui five wide center aligned column">
+              <div id="google-reviews"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- review-body close tag --> 
+      <!-- about --> 
+      <!-- test remove
       <div class="about-body" id="about"> 
-        <!-- about images -->
+        <!-- about images --> 
+      <!-- test remove
         <div class="ui three column center aligned stackable very padded grid">
           <div class="three column center aligned row">
             <div class="four wide column"><img src="img/about/about-1.jpg"></div>
@@ -111,19 +191,21 @@
             <div class="four wide column"><img src="img/about/about-3.png"></div>
           </div>
         </div>
-        <!-- computer and tablet about title and text -->
+        <!-- computer about title and text --> 
+      <!-- test remove
         <div class="ui two column stackable horizontally vertically very padded stackable grid container">
-          <div class="computer tablet only two column very padded centered row">
+          <div class="computer only two column very padded centered row">
             <div class="four wide column"> <img name="about" src="img/about/about-title.png"> </div>
             <div class="four wide column">
               <p class="content font-about">Through exceptional client services and years of perfecting our craft, we offer quality eyelash extensions services in a relaxing & sanitary environment.</p>
             </div>
           </div>
-          
-          <!-- mobile about title and text -->
-          <div class="ui two column stackable horizontally vertically very padded stackable grid container">
-            <div class="mobile only two column centered row">
-              <div class="column"> <img name="about" src="img/about/about-title.png"> </div>
+
+          <!-- mobile about title and text --> 
+      <!-- test remove
+          <div class="ui two column stackable center aligned horizontally vertically very padded stackable grid container">
+            <div class="tablet mobile only two column centered row">
+              <div class="column"> <img class="ui medium centered image" name="about" src="img/about/about-title.png"> </div>
               <div class="column">
                 <p class="content font-about">Through exceptional client services and years of perfecting our craft, we offer quality eyelash extensions services in a relaxing & sanitary environment.</p>
               </div>
@@ -133,16 +215,19 @@
       </div>
       <!-- about body close tag --> 
       
-      <!-- biography -->
+      <!-- biography --> 
+      <!-- test remove
       <div class="biography-body" id="biography"> 
-        <!-- biography images -->
+        <!-- biography images --> 
+      <!-- test remove
         <div class="ui two column center aligned stackable very padded grid">
           <div class="two column center aligned row">
             <div class="five wide column"><img src="img/biography/biography-1.jpg"></div>
             <div class="five wide column"><img src="img/biography/biography-2.jpg"></div>
           </div>
         </div>
-        <!-- computer and tablet biography title and text -->
+        <!-- computer and tablet biography title and text --> 
+      <!-- test remove
         <div class="ui two column stackable horizontally vertically very padded stackable grid container">
           <div class="computer tablet only two column very padded centered row">
             <div class="four wide column">
@@ -151,7 +236,8 @@
             <div class="four wide column"> <img name="biography" src="img/biography/biography-title.png"> </div>
           </div>
           
-          <!-- mobile biography title and text -->
+          <!-- mobile biography title and text --> 
+      <!-- test remove
           <div class="ui two column stackable horizontally vertically very padded stackable grid container">
             <div class="mobile only two column centered row">
               <div class="column"> <img name="biography" src="img/biography/biography-title.png"> </div>
@@ -164,7 +250,8 @@
       </div>
       <!-- biography body close tag --> 
       
-      <!-- policies and procedures -->
+      <!-- policies and procedures --> 
+      <!-- test remove
       <div class="policy-body" id="policy">
         <div class="ui very padded center aligned grid">
           <div class="row">
@@ -174,7 +261,8 @@
           </div>
         </div>
         
-        <!-- computer and tablet policy image and title -->
+        <!-- computer and tablet policy image and title --> 
+      <!-- test remove
         <div class="ui two column stackable horizontally vertically very padded stackable grid container">
           <div class="computer tablet only one column very padded centered row">
             <div class="four wide column"><img src="img/policy/policy-1.jpg"><br><br>
@@ -185,7 +273,8 @@
           </div>
         </div>
         
-        <!-- mobile policy title and text -->
+        <!-- mobile policy title and text --> 
+      <!-- test remove
         <div class="ui three column stackable horizontally vertically very padded stackable grid container">
           <div class="mobile only three column centered row">
             <div class="four wide column"> <img name="policy" src="img/policy/policy-1.jpg"> </div>
@@ -198,8 +287,9 @@
       </div>
     
     <!-- policy and procedure close tag --> 
-        
-         <!-- reviews -->
+      
+      <!-- reviews --> 
+      <!-- test remove
       <div class="review-body" id="review">
         <div class="ui centered two column stackable grid">
             <div class="row">
@@ -222,33 +312,31 @@
             </div>
         </div>
       </div>
-        <!-- review-body close tag -->
-    
-    <!-- footer -->
-    <div class="footer-body">
-      <div class="ui divider"></div>
-      <div class="ui center aligned stackable three column grid footer">
-        <div class="column">
-          <center>
-            <img class="ui small image" src="img/logo-footer.gif">
-          </center>
+        <!-- review-body close tag --> 
+      
+      <!-- footer -->
+      <div class="footer-body">
+        <div class="ui divider"></div>
+        <div class="ui center aligned stackable three column grid footer">
+          <div class="column">
+            <center>
+              <img class="ui small image" src="img/logo-footer.gif">
+            </center>
+          </div>
+          <div class="column">
+            <p class="footer-font"> Beauty Lounge Kailua<br>
+              418 Kuulei Road, Suite G<br>
+              Kailua, HI 96734<br>
+              808 738-6005 </p>
+          </div>
+          <div class="ui middle aligned column"> <a href="https://www.instagram.com/explore/locations/1087965257992198/beauty-lounge-kailua"><i class="big black instagram icon"></i></a> <a href="https://www.facebook.com/beautyloungekailua/"><i class="big black facebook icon"></i></a> <a href="https://goo.gl/EXhXH9"><i class="big black google plus square icon"></i></a> </div>
         </div>
-        <div class="column">
-          <p class="footer-font"> Beauty Lounge Kailua<br>
-            418 Kuulei Road, Suite G<br>
-            Kailua, HI 96734<br>
-            808 738-6005 </p>
-        </div>
-        <div class="ui middle aligned column"> <a href="https://www.instagram.com/explore/locations/1087965257992198/beauty-lounge-kailua"><i class="big black instagram icon"></i></a> <a href="https://www.facebook.com/beautyloungekailua/"><i class="big black facebook icon"></i></a> <a href="https://goo.gl/EXhXH9"><i class="big black google plus square icon"></i></a> </div>
       </div>
+      <!-- segment close tag --> 
     </div>
-    <!-- segment close tag --> 
+    <!-- pusher close tag --> 
   </div>
-  <!-- pusher close tag --> 
-</div>
-<!-- starting ui grid close tag -->
-</div>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script> 
 </div>
 </body>
 </html>
