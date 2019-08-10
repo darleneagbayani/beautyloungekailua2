@@ -300,10 +300,11 @@ grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));*/
 }
 /* photos */
 .photos-body {
-    padding-top: 18vh;
+    padding-top: 0vh;
 }
 .photo.column {
     float: left;
+    overflow: hidden;
 }
 .filterPhotos {
     padding-bottom: 3vh;
